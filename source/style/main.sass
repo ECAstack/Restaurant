@@ -1,0 +1,33 @@
+// Base
+@import base/variables
+@import base/mixins
+@import base/breakpoints
+@import base/resets
+@import base/typography
+
+// Component
+@import components/button
+@import components/footer
+@import components/navbar
+@import components/header
+@import components/features
+
+//    Layout.
+//@import layout/footer
+
+section#services
+	.services
+		max-width: 900px
+
+section#features
+	width: 100%
+	.features
+		max-width: 900px
+		.innerFeatures
+			.burger, .beer, .meat
+				max-width: 300px
+				height: 350px
+section#brands
+	background-color: $smokeW
+	color: $smokeW
+	color: $dGray

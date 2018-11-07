@@ -1,0 +1,62 @@
+/* Some things in CSS are a bit tedious to write, especially with CSS3 and the many vendor prefixes that exist.
+ * A mixin lets you make groups of CSS declarations that you want to reuse throughout your site. 
+ * You can even pass in values to make your mixin more flexible. A good use of a mixin is for vendor prefixes. 
+ * Here's an example for border-radius.
+ *
+ *
+ *=border-radius($radius)
+ *  -webkit-border-radius: $radius
+ *  -moz-border-radius:    $radius
+ *  -ms-border-radius:     $radius
+ *  border-radius:         $radius
+ *
+ *.box
+ *  +border-radius(10px)
+ */
+=textCenter
+	text-align: center
+=boldText
+	font-weight: bold
+=center50
+	position: absolute
+	left: 50%
+	transform: translate(-50%, 0)
+
+=flexParent
+	display: flex
+	display: -webkit-flex
+	display: -ms-flexbox
+	justify-content: center
+	-webkit-justify-content: center
+		-ms-flex-pack: center
+	align-items: center 
+	-webkit-align-items: center
+		-ms-flex-align: center
+	flex-direction: column
+	-webkit-flex-direction: column
+		-ms-flex-direction: column
+=row
+	flex-direction: row
+	-webkit-flex-direction: row
+		-ms-flex-direction: row
+=column
+	flex-direction: column
+	-webkit-flex-direction: column
+		-ms-flex-direction: column
+=wrap
+	flex-wrap: wrap
+=flexCenter
+	justify-content: center
+	-webkit-justify-content: center
+	-ms-flex-pack: center
+	align-items: center 
+	-webkit-align-items: center
+		-ms-flex-align: center
+
+
+=borderRed
+	border: 1px solid red
+=borderBlue
+	border: 1px solid blue
+
+

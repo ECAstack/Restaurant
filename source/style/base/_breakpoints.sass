@@ -1,0 +1,37 @@
+
+//    MOBILE FIRST 
+//    ============
+//    Breakpoints
+//    1em == 16px
+
+//// 460px
+$phablet: 30em
+//// 600px
+$tablet: 38em
+//// 768px
+$hd: 48em
+//// 992px
+$desktop: 62em
+
+=breakpoint($class)
+    @if $class == phablet
+        @media (min-width: $phablet)
+            @content
+    @else if $class == tablet
+        @media (min-width: $tablet)
+            @content
+    @else if $class == hd
+        @media (min-width: $hd)
+            @content
+    @else if $class == desktop
+        @media (min-width: $desktop)
+            @content
+
+// +breakpoint(phablet) //// 460px
+			color: red
+// +breakpoint(tablet) //// 600px
+			color: green
+// +breakpoint(hd) //// 768px
+			color: blue
+// +breakpoint(desktop) //// 992px
+			color: orange

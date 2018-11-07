@@ -1,0 +1,173 @@
+
+//  asdasdasdsa
+section#services
+	width: 100%
+	+flexParent
+	.services
+		padding: 3rem .4rem 1rem .4rem
+		max-width: 920px
+		width: 100%
+		+flexParent
+		+breakpoint(phablet)
+			flex-direction: row
+			flex-wrap: nowrap
+		h1
+			padding-bottom: 1rem
+			+breakpoint(phablet) //// 460px
+				padding: 1rem
+			+breakpoint(tablet) // 600px
+				padding-right: 2rem
+				flex: 2
+				text-align: center
+			+breakpoint(desktop)  	// 992px
+				width: 60%
+		p
+			font-size: 1.1rem
+			+breakpoint(phablet)
+			+breakpoint(tablet) 
+				padding-right: 2rem
+				flex: 1
+			+breakpoint(desktop) //// 992px
+				width: 44%
+section#features
+	width: 100%
+	padding-bottom: 2rem
+	+flexParent
+	.features
+		max-width: 920px
+		width: 100%
+		.innerFeatures
+			+flexParent
+			+breakpoint(tablet) //// 600px
+				+row
+				+wrap
+			.burger,	.beer, .meat
+				+flexParent
+				padding-right: 1rem
+				h6
+					padding-top: 1rem
+					padding-bottom: .5rem
+				p
+					padding-bottom: .7rem
+					+textCenter
+				a
+					+pix_btnSm
+					width: 155px
+					i
+						padding-right: 1rem
+section#brands
+	width: 100%
+	+flexParent
+	position: relative
+	+breakpoint(tablet) //// 768px
+		+row
+	.brands
+		+flexParent
+		position: absolut
+		padding: 3rem .5rem
+		max-width: 450px
+		width: 100%
+		height: 100%
+		span
+			padding: 0 3rem
+			h5 
+				align-self: flex-start
+				padding-bottom: 1rem
+			p
+				font-size: 1.1rem
+	.banners
+		position: absolut
+		padding: 3rem .5rem
+		max-width: 450px
+		width: 100%
+		height: 100%
+		padding: 1rem
+		.commerce, .square, .space
+			padding: 2rem 1rem
+			+flexParent
+			img
+
+section#quality
+	height: auto
+	width: 100%
+	.quality
+		.innerQuality
+			padding: 4.5rem
+			+flexParent
+			.booking
+				width: 40%
+				display: inline-block
+				h1
+					padding-bottom: 1.1rem
+				h6
+					font-size: 1.2rem
+					font-weight: bold
+					color: $orange
+					padding-bottom: 1.2rem
+				p
+					padding-bottom: 1.2rem
+				a
+					+pix_button
+					width: 210px
+					color: black
+					box-shadow: 0px 0px 0px 2px black
+				&:after
+					content: ""
+					display: block
+					height: 8rem
+			.bookImg
+				width: 40%
+				display: inline-block
+			.meals
+				h1
+					padding-bottom: 1.1rem
+				h6
+					font-size: 1.2rem
+					font-weight: bold
+					color: $orange
+					padding-bottom: 1.2rem
+				p
+					padding-bottom: 1.2rem
+				a
+					+pix_button
+					width: 210px
+					color: black
+					box-shadow: 0px 0px 0px 2px black
+				&:after
+					content: ""
+					display: block
+					height: 2rem
+
+section#logo
+	height: auto
+	width: 100%
+	background-color: $smokeW
+	+flexParent
+	.logo
+		.innerLogo
+			padding: 1.5rem
+			span
+				h1
+					padding-bottom: 1.2rem
+				p 
+					font-size: 1.4rem
+					&:after
+						content: ""
+						display: block
+						height: 5rem
+			.logoContent
+				+flexParent
+				img
+					border-radius: 100%
+					border: 3px solid #ccc
+					&:after
+						content: ""
+						display: block
+						height: 222px
+				p
+					text-align: center
+					padding: 1rem 0
+					&:after
+						content: ""
+						display: block
+						height: 1rem
